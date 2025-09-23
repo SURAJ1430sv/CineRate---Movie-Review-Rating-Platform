@@ -36,7 +36,7 @@ A sleek and interactive web application that allows users to browse, review, and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/movie-review-site.git
+   git clone (https://github.com/SURAJ1430sv/CineRate---Movie-Review-Rating-Platform)
    ```
 2. Open `index.html` in your browser.
 3. Explore movies, add reviews, and rate your favorites!
