@@ -1,0 +1,1 @@
+# CineRate---Movie-Review-Rating-Platform
