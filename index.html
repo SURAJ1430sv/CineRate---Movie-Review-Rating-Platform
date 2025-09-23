@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineRate - Movie Review & Rating Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-film"></i>
+                <h1>CineRate</h1>
+            </div>
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search movies...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-btn active" data-section="trending">Trending</button>
+                <button class="nav-btn" data-section="watchlist">Watchlist</button>
+                <button class="nav-btn" data-section="rated">My Ratings</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="hero-content">
+                <h2>Discover & Rate Amazing Movies</h2>
+                <p>Join thousands of movie enthusiasts in rating and reviewing the latest films</p>
+            </div>
+        </section>
+
+        <!-- Section Headers -->
+        <div class="section-header" id="section-header">
+            <h2 id="section-title">Trending Movies</h2>
+            <div class="section-controls">
+                <select id="genre-filter" class="filter-select">
+                    <option value="">All Genres</option>
+                </select>
+                <select id="sort-filter" class="filter-select">
+                    <option value="popularity.desc">Most Popular</option>
+                    <option value="release_date.desc">Latest Release</option>
+                    <option value="vote_average.desc">Highest Rated</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Movies Grid -->
+        <section class="movies-grid" id="movies-container">
+            <!-- Movies will be loaded here -->
+        </section>
+
+        <!-- Loading Spinner -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading movies...</p>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <i class="fas fa-film"></i>
+            <h3>No movies found</h3>
+            <p>Try adjusting your search or filters</p>
+        </div>
+    </main>
+
+    <!-- Movie Detail Modal -->
+    <div class="modal" id="movie-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">&times;</button>
+            <div class="movie-detail">
+                <!-- Movie details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div class="modal" id="review-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-review-modal">&times;</button>
+            <div class="review-form">
+                <h3>Write a Review</h3>
+                <div class="movie-info-mini" id="review-movie-info"></div>
+                <div class="rating-section">
+                    <label>Your Rating:</label>
+                    <div class="star-rating" id="review-rating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                </div>
+                <textarea id="review-text" placeholder="Share your thoughts about this movie..."></textarea>
+                <div class="review-actions">
+                    <button id="submit-review" class="btn btn-primary">Submit Review</button>
+                    <button id="cancel-review" class="btn btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast" id="toast"></div>
+
+    <script src="storage.js"></script>
+    <script src="api.js"></script>
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
