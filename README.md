@@ -5,6 +5,9 @@ Sure! Here's a well-structured and engaging description you can use for your Git
 
 A sleek and interactive web application that allows users to browse, review, and rate movies. Built using **HTML**, **CSS**, and **JavaScript**, this project showcases dynamic content rendering, responsive design, and user-friendly interfaces — perfect for film enthusiasts and aspiring web developers alike.
 
+## 🚀 Live Demo
+Visit the deployed site here: (https://cine-rate-movie-review-rating-platf.vercel.app/)
+
 ### 🚀 Features
 
 - ⭐ **Movie Listings**: Display a curated list of movies with posters, titles, and genres.
