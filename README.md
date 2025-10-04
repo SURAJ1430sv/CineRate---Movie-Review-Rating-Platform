@@ -3,7 +3,9 @@
 A sleek and interactive web application that allows users to browse, review, and rate movies. Built using **HTML**, **CSS**, and **JavaScript**, this project showcases dynamic content rendering, responsive design, and user-friendly interfaces — perfect for film enthusiasts and aspiring web developers alike.
 
 ## Images 
+# Interface
 <img width="1115" height="905" alt="image" src="https://github.com/user-attachments/assets/c0166cf0-6b96-4aac-9cc9-9975020df4d6" />
+# MyRatings
 <img width="1128" height="812" alt="image" src="https://github.com/user-attachments/assets/ed560e9f-f43c-468d-8517-15e5a399cbd3" />
 
 ## 🚀 Live Demo
